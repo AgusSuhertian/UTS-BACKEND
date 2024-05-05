@@ -1,0 +1,23 @@
+meta {
+  name: Hapus Menu
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:5000/api/warung/hapusmenu/66372a1d08e3048e5007ef81
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: JWT eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3QyMjMxQGdtYWlsLmNvbSIsInVzZXJJZCI6IjY2MzA4OTkzN2RiNTIwOWE1ZmE5YmQ5MSIsImlhdCI6MTcxNDg3NTM4MSwiZXhwIjoxNzE0OTYxNzgxfQ.wWKzgtw3H5K2s4o3nnogsvFljiacMW8V7qCngUSrODQ
+}
+
+body:json {
+  {
+    "name": "Mie Goreng",
+    "catalog": "Makanan",
+    "price": "15000"
+  }
+}
