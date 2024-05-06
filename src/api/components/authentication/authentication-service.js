@@ -15,7 +15,7 @@ async function checkLoginCredentials(email, password) {
   // ini adalah logic yang akan menampilkan waktu 30 menit setelah sekarang yang akan digunakan jika user gagal login sebanyak 5x
   if (user.updatedOn) {
     let after30Minutes = new Date(
-      user.updatedOn.getTime() + 30 * 60 * 10 * 1000
+      user.updatedOn.getTime() + 30 * 60 * 1000
     );
     let now = new Date();
     // logic yang membuat user yang gagal login lebih dari 5x tidak bisa login dan harus menunggu 30 menit sebelum dapat mencoba login kembali
